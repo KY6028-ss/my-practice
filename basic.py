@@ -58,4 +58,24 @@ line2
 line3\
 """)
 print("-----------------------------------------")
-print("")
+print("Hi" * 3 + "Mike")
+print("Py" + "thon")
+s = "aaaaaaaaaaaaaaaa"\
+    "bbbbbbbbbbbbbbbb"
+print(s)
+print("-----------------------------------------")
+#文字列のインデックスとスライス
+word = "Python"
+print(word[0])
+print(word[1])
+print(word[-1])
+print(word[0:2])
+print(word[:2])
+print(word[2:])
+
+word = "j" + word[1:]
+print(word)
+print("-----------------------------------------")
+n = len(word)
+print(n)
+print("-----------------------------------------")
