@@ -69,13 +69,30 @@ word = "Python"
 print(word[0])
 print(word[1])
 print(word[-1])
-print(word[0:2])
+print(word[0:2])#0から2の手前まで
 print(word[:2])
 print(word[2:])
 
-word = "j" + word[1:]
+word = "j" + word[1:]#文字列は変更できないため、インデックスを指定して変更することはできない。新しい文字列を作成する必要がある。
 print(word)
 print("-----------------------------------------")
-n = len(word)
+n = len(word)#文字列の長さを取得
 print(n)
 print("-----------------------------------------")
+#文字のメソッド
+s = "My name is Mike. Hi Mike."
+print(s)
+is_start = s.startswith("My")#始まりが「My」かどうかを判定する
+print(is_start)
+is_start = s.startswith("X")#始まりが「X」かどうかを判定する
+print(is_start)
+
+print("-----------------------------------------")
+print(s.find("Mike"))#「Mike」の最初　11番目にある
+print(s.rfind("Mike"))#「Mike」の最後 20番目にある
+print(s.count("Mike"))#「Mike」の個数
+print(s.capitalize())#最初の文字を大文字にするほかは小文字
+print(s.title())#全ての単語の最初の文字を大文字にする
+print(s.upper())#全ての文字を大文字にする
+print(s.lower())#全ての文字を小文字)
+print(s.replace("Mike","Nancy"))#「Mike」を「Nancy」に置き換える)
