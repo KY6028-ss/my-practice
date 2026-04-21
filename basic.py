@@ -95,4 +95,20 @@ print(s.capitalize())#最初の文字を大文字にするほかは小文字
 print(s.title())#全ての単語の最初の文字を大文字にする
 print(s.upper())#全ての文字を大文字にする
 print(s.lower())#全ての文字を小文字)
-print(s.replace("Mike","Nancy"))#「Mike」を「Nancy」に置き換える)
+print(s.replace("Mike","Nancy"))#「Mike」を「Nancy」に置き換える):
+
+#文字列のフォーマット formatメソッド　数字が文字列に変換され代入される
+print("a is {}".format("apple"))
+print("a is {} {} {}".format(1,2,3))
+print("a is {0} {1} {2}".format(1,2,3))#インデックス指定
+print("a is {2} {1} {0}".format(1,2,3))#インデックス指定（逆順）
+print('My name is {0} {1}. I am {1} {0}'.format("KY","6028"))
+print('My name is {name} {family}. I am {family} {name}'.format(name="KY", family="6028"))#キーワード引数で指定
+
+#f-string　文字列の前にfをつけると、{}の中に変数や式を入れることができる
+a = "apple"
+print(f'a is {a}')
+x, y, z = 1, 2, 3
+print(f'x is {x}, y is {y}, z is {z}')
+print(f'{x}{y}{z}{z}{y}{x}')
+print(f'x + y is {x + y}')
